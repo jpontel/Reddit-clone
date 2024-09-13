@@ -47,16 +47,20 @@ export default function CardHome({name, time, description, tags, likes, comments
                 <div className={'inline-flex ml-4 gap-3'}>
                     <div className={'inline-flex'}>
                         <button>
-                            <img src={likeIcon} className={'w-4 mr-1 hover:bg-red-500'} alt={'Like Icon'}/>
+                            <img src={likeIcon} className={'w-4 mr-1'} alt={'Like Icon'}/>
                         </button>
                         <div className={'font-medium'}>{likes}</div>
                     </div>
                     <div className={'inline-flex'}>
-                        <img src={commentIcon} className={'w-4 mr-1'} alt={'Comment Icon'}/>
+                        <button>
+                            <img src={commentIcon} className={'w-4 mr-1'} alt={'Comment Icon'}/>
+                        </button>
                         <div className={'font-medium'}>{comments}</div>
                     </div>
                     <div className={'inline-flex'}>
-                        <img src={markedIcon} className={'w-3 mr-1'} alt={'Marked Icon'}/>
+                        <button>
+                            <img src={markedIcon} className={'w-3 mr-1'} alt={'Marked Icon'}/>
+                        </button>
                         <div className={'font-medium'}>{marks}</div>
                     </div>
                 </div>
