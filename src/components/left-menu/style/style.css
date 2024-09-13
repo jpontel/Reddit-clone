@@ -1,0 +1,61 @@
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    margin: auto;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+.add-icon {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.add-icon:before,
+.add-icon:after {
+    content: '';
+    position: absolute;
+    display: flex;
+    background-color: black;
+    width: 12px;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.add-icon:after {
+    transform: rotate(90deg);
+}
+
+.custom-border {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.custom-border:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15%; /* Espaço em branco no canto esquerdo */
+    width: 70%; /* Largura da borda centralizada */
+    height: 1px;
+    background-color: #737373; /* Cor da borda (cor de zinco) */
+}
+
